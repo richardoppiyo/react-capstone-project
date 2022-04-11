@@ -1,0 +1,13 @@
+.holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.innerdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    background-color: aliceblue;
+    margin: 10px;
+}

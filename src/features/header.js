@@ -8,7 +8,7 @@ const Header = ({ children }) => (
     <header className="head">
       <NavLink to="/" className="link-item"> 2022 </NavLink>
       <p>Most viewed</p>
-      <div className="innerdiv">
+      <div className="innerbox">
         <p>imag1</p>
         <p>imag2</p>
       </div>
