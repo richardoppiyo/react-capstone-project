@@ -1,11 +1,10 @@
 .head {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .innerdiv {
-    display: flex;
-
+  display: flex;
 }
