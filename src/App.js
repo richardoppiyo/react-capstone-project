@@ -4,20 +4,18 @@ import './App.css';
 import Home from './features/home';
 import Details from './features/details';
 
-const App = () => {
-  return(
+const App = () => (
   <>
     <BrowserRouter>
-    <Header>
+      <Header>
         <Routes>
-           <Route path="/" element={<Home />} />
-           <Route path="/details" element={<Details />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/details" element={<Details />} />
         </Routes>
       </Header>
 
     </BrowserRouter>
   </>
-  )
-};
+);
 
 export default App;
