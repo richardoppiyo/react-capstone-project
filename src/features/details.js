@@ -17,16 +17,24 @@ const Details = () => {
   return (
     <>
       <div className="box">
-        <h2>Country covid info breakdown</h2>
         {filtered.map((country) => (
           <div key="{country.id}">
             <div className="upperpart">
               <img className="flag" src={`${country.flag}`} alt="hello" />
               <div>
-                <p>{country.country}</p>
-                <p>{country.population}</p>
+                <p>
+                  Country:
+                  {' '}
+                  {country.country}
+                </p>
+                <p>
+                  Population:
+                  {' '}
+                  {country.population}
+                </p>
               </div>
             </div>
+            <h3> Covid info breakdown</h3>
             <p>
               Total Cases:
               {' '}
@@ -64,7 +72,6 @@ const Details = () => {
               <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
 
             </p>
-            <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
           </div>
         ))}
 
