@@ -1,18 +1,60 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link, useParams } from 'react-router-dom';
+import { BsArrowRightCircle } from 'react-icons/bs';
+import { displayCountryInfo } from '../app/apis/details';
 
-const Details = () => (
-  <>
-    <div>
-      <p>Total Cases: 10000</p>
-      <p>Total tested: 10000</p>
-      <p>Population: 10000</p>
-      <p>Total deaths: 10000</p>
-      <p>Total recovered: 10000</p>
-      <p>Continent: 10000</p>
-    </div>
-    <h1>Details page</h1>
-    <a href="/">To Home</a>
-  </>
-);
+const Details = () => {
+  const param = useParams();
+  const countries = useSelector((store) => store.details);
+  const filtered = countries.filter((item) => item.country === param.country);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(displayCountryInfo());
+  }, []);
+  return (
+    <>
+      {filtered.map((country) => (
+        <div key="{country.id}">
+          <p>
+            Total Cases:
+            {' '}
+            {country.country}
+          </p>
+          <p>
+            Total tested:
+            {' '}
+            {country.tests}
+          </p>
+          <p>
+            Population:
+            {' '}
+            {country.population}
+          </p>
+          <p>
+            Total deaths:
+            {' '}
+            {country.deaths}
+          </p>
+          <p>
+            Total recovered:
+            {' '}
+            {country.recovered}
+          </p>
+          <p>
+            Continent:
+            {' '}
+            {country.continent}
+          </p>
+          <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+        </div>
+      ))}
+
+      {/* <h1>Details page</h1>
+      <a href="/">To Home</a> */}
+    </>
+  );
+};
 
 export default Details;

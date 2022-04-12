@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './home.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { BsArrowRightCircle } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 // import { AiOutlineSearch } from 'react-icons/ai';
 import { displayCountries } from '../app/apis/covid';
 
@@ -54,10 +55,9 @@ const Home = () => {
                  <img className="flag" src={`${country.flag}`} alt="hello" />
                  <div className="detailer">
                    {/* <BsArrowRightCircle /> */}
-                   <a href="/details">
-                     {' '}
+                   <Link to={`/Details/${country.country}`}>
                      <BsArrowRightCircle />
-                   </a>
+                   </Link>
                    <p>{country.country}</p>
                    <p>
                      Cases:
