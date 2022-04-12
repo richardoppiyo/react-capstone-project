@@ -1,0 +1,18 @@
+.upperpart {
+    display: flex;
+}
+
+.box {
+ width: 97%;
+ margin: auto;
+ border: 2px solid;
+}
+
+/* .innerbox {
+    display: flex;
+    flex-direction: column;
+} */
+
+.innerbox {
+    background-color: gray;
+}

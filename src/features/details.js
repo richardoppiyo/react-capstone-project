@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { displayCountryInfo } from '../app/apis/details';
+import './details.css';
 
 const Details = () => {
   const param = useParams();
@@ -15,44 +16,59 @@ const Details = () => {
   }, []);
   return (
     <>
-      {filtered.map((country) => (
-        <div key="{country.id}">
-          <p>
-            Total Cases:
-            {' '}
-            {country.country}
-          </p>
-          <p>
-            Total tested:
-            {' '}
-            {country.tests}
-          </p>
-          <p>
-            Population:
-            {' '}
-            {country.population}
-          </p>
-          <p>
-            Total deaths:
-            {' '}
-            {country.deaths}
-          </p>
-          <p>
-            Total recovered:
-            {' '}
-            {country.recovered}
-          </p>
-          <p>
-            Continent:
-            {' '}
-            {country.continent}
-          </p>
-          <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
-        </div>
-      ))}
+      <div className="box">
+        <h2>Country covid info breakdown</h2>
+        {filtered.map((country) => (
+          <div key="{country.id}">
+            <div className="upperpart">
+              <img className="flag" src={`${country.flag}`} alt="hello" />
+              <div>
+                <p>{country.country}</p>
+                <p>{country.population}</p>
+              </div>
+            </div>
+            <p>
+              Total Cases:
+              {' '}
+              {country.country}
+              <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+            </p>
+            <p className="innerbox">
+              Total tested:
+              {' '}
+              {country.tests}
+              <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+            </p>
+            <p>
+              Population:
+              {' '}
+              {country.population}
+              <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+            </p>
+            <p className="innerbox">
+              Total deaths:
+              {' '}
+              {country.deaths}
+              <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+            </p>
+            <p>
+              Total recovered:
+              {' '}
+              {country.recovered}
+              <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+            </p>
+            <p className="innerbox">
+              Continent:
+              {' '}
+              {country.continent}
+              <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
 
-      {/* <h1>Details page</h1>
-      <a href="/">To Home</a> */}
+            </p>
+            <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+          </div>
+        ))}
+
+      </div>
     </>
   );
 };

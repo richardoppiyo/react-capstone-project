@@ -27,3 +27,26 @@
 .headicon {
     padding: 10px;
 }
+
+.searchitems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.input-search {
+    max-height: 50px;
+}
+/* 
+.search,
+.headtext {
+ text-align: center;
+ margin: 25px auto;
+}
+*/
+
+.uppediv {
+    display: flex;
+    justify-content: space-around;
+} 
