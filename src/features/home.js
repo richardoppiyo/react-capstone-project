@@ -21,17 +21,12 @@ const Home = () => {
     }
   }, []);
 
-  // const setLocation = () => {
-  //   console.log('hello');
-  // };
   return (
     <>
-      {/* <div className="upperpart"> */}
       <div className="uppediv">
         <GiWorld style={{ width: '100px', height: '100px' }} />
         <h4 style={{ width: '50%' }}>Covid-19 cases and Analysis country by country</h4>
       </div>
-      {/* </div> */}
       <div className="searchitems">
         <h4 className="headtext">STATS BY COUNTRY</h4>
         <div className="search">
@@ -42,17 +37,7 @@ const Home = () => {
             onChange={(e) => { setLocation(e.target.value); }}
           />
         </div>
-
       </div>
-      {/* <h2 className="headtext">STATS BY COUNTRY</h2>
-      <div className="search">
-        <input
-          className="input-search"
-          placeholder="Search by Country"
-          value={location}
-          onChange={(e) => { setLocation(e.target.value); }}
-        />
-      </div> */}
       <div className="holder">
         {
            !filtered.length ? (
@@ -62,7 +47,6 @@ const Home = () => {
                <div key="{country.id}" className="innerdiv">
                  <img className="flag" src={`${country.flag}`} alt="hello" />
                  <div className="detailer">
-                   {/* <BsArrowRightCircle /> */}
                    <Link to={`/Details/${country.country}`}>
                      <BsArrowRightCircle />
                    </Link>
@@ -77,26 +61,6 @@ const Home = () => {
              ))
            )
         }
-        {/* <div className="innerdiv">
-          <p>COUNTRY NAME</p>
-          <p>1234 </p>
-          <a href="/details">To details</a>
-        </div>
-        <div className="innerdiv">
-          <p>COUNTRY NAME</p>
-          <p>1234 </p>
-          <a href="/details">To details</a>
-        </div>
-        <div className="innerdiv">
-          <p>COUNTRY NAME</p>
-          <p>1234 </p>
-          <a href="/details">To details</a>
-        </div>
-        <div className="innerdiv">
-          <p>COUNTRY NAME</p>
-          <p>1234 </p>
-          <a href="/details">To details</a>
-        </div> */}
       </div>
     </>
   );

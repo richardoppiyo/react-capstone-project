@@ -33,7 +33,6 @@ export const displayCountryInfo = () => async (dispatch) => {
 
   }));
 
-  console.log(countriesArray);
   dispatch(load(countriesArray));
 };
 
