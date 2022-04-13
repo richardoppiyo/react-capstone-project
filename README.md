@@ -5,11 +5,14 @@
 
 
 
-<!-- ## Screenshot
+## Screenshot
 
-![screenshot](./images/home.png)
+![screenshot](./a.png)
 
-![screenshot](./images/popup-small.png) -->
+![screenshot](./b.png)
+
+## Live Link
+[Click Here](https://astounding-kitsune-d200f4.netlify.app/)
 
 ## Built With
 - Major Languages: JAVASCRIPT, HTML, CSS
@@ -18,7 +21,6 @@
 ### Prerequisites
 - npm ( Node Package Manager )
 - git and Github Account
-
 
 
 ### Install linters
@@ -69,6 +71,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - To morning session team,reviewers and standup team members.
+- Design by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 
 ## 📝 License
 
