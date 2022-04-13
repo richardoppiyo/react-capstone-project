@@ -15,7 +15,7 @@ const Header = ({ children }) => (
         {' '}
       </NavLink>
       <p>Most viewed</p>
-      <div className="innerbox">
+      <div className="insidebox">
         <p className="headicon"><FaMicrophone /></p>
         <p className="headicon"><AiOutlineSetting /></p>
         <p className="headicon"><AiOutlineSearch /></p>

@@ -1,0 +1,27 @@
+/* body {
+ color: white;
+} */
+
+.upperpart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #82d4fa;
+    height: 170px;
+}
+
+.box {
+ width: 97%;
+ margin: auto;
+ border: 2px solid;
+ background-color: #82d4fa;
+}
+
+.innerbox {
+    background-color: gray;
+}
+
+.flag {
+    width: 140px;
+    height: 150px;
+}

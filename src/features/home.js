@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './home.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { BsArrowRightCircle } from 'react-icons/bs';
+import { GiWorld } from 'react-icons/gi';
+import { Link } from 'react-router-dom';
 // import { AiOutlineSearch } from 'react-icons/ai';
 import { displayCountries } from '../app/apis/covid';
 
@@ -24,26 +26,33 @@ const Home = () => {
   // };
   return (
     <>
-      {/* console.log(countries); */}
-      <h2>STATS BY COUNTRY</h2>
+      {/* <div className="upperpart"> */}
+      <div className="uppediv">
+        <GiWorld style={{ width: '100px', height: '100px' }} />
+        <h4 style={{ width: '50%' }}>Covid-19 cases and Analysis country by country</h4>
+      </div>
+      {/* </div> */}
+      <div className="searchitems">
+        <h4 className="headtext">STATS BY COUNTRY</h4>
+        <div className="search">
+          <input
+            className="input-search"
+            placeholder="Search by Country"
+            value={location}
+            onChange={(e) => { setLocation(e.target.value); }}
+          />
+        </div>
+
+      </div>
+      {/* <h2 className="headtext">STATS BY COUNTRY</h2>
       <div className="search">
-        {/* <h2 className="h2Search">
-          Search by Country
-          <AiOutlineSearch className="search-icon" />
-        </h2> */}
-        {/* <AiOutlineSearch
-          className="input-search"
-          placeholder="Search by Country"
-          value={location}
-          onChange={(e) => { setLocation(e.target.value); }}
-        /> */}
         <input
           className="input-search"
           placeholder="Search by Country"
           value={location}
           onChange={(e) => { setLocation(e.target.value); }}
         />
-      </div>
+      </div> */}
       <div className="holder">
         {
            !filtered.length ? (
@@ -54,10 +63,9 @@ const Home = () => {
                  <img className="flag" src={`${country.flag}`} alt="hello" />
                  <div className="detailer">
                    {/* <BsArrowRightCircle /> */}
-                   <a href="/details">
-                     {' '}
+                   <Link to={`/Details/${country.country}`}>
                      <BsArrowRightCircle />
-                   </a>
+                   </Link>
                    <p>{country.country}</p>
                    <p>
                      Cases:
