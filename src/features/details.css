@@ -17,11 +17,26 @@
  background-color: #82d4fa;
 }
 
+.innerbox1 {
+    height: 40px;
+    padding: 3px 0 3px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .innerbox {
     background-color: gray;
+    height: 40px;
+    padding: 3px 0 3px 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .flag {
     width: 140px;
     height: 150px;
+}
+
+.arrow {
+    margin: 0 15px;
 }

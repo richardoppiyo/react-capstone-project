@@ -35,43 +35,49 @@ const Details = () => {
               </div>
             </div>
             <h3> Covid info breakdown</h3>
-            <p>
-              Total Cases:
-              {' '}
-              {country.country}
-              <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
-            </p>
-            <p className="innerbox">
-              Total tested:
-              {' '}
-              {country.tests}
-              <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
-            </p>
-            <p>
-              Population:
-              {' '}
-              {country.population}
-              <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
-            </p>
-            <p className="innerbox">
-              Total deaths:
-              {' '}
-              {country.deaths}
-              <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
-            </p>
-            <p>
-              Total recovered:
-              {' '}
-              {country.recovered}
-              <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
-            </p>
-            <p className="innerbox">
-              Continent:
-              {' '}
-              {country.continent}
-              <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+            <div className="innerbox">
+              <p>Continent:</p>
+              <p>
+                {country.continent}
+                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+              </p>
+            </div>
+            <div className="innerbox1">
+              <p>Total Cases:</p>
+              <p>
+                {country.continent}
+                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+              </p>
+            </div>
+            <div className="innerbox">
+              <p>Total tested:</p>
+              <p>
+                {country.tests}
+                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+              </p>
+            </div>
+            <div className="innerbox1">
+              <p>Population:</p>
+              <p>
+                {country.population}
+                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+              </p>
+            </div>
+            <div className="innerbox">
+              <p>Total deaths:</p>
+              <p>
+                {country.deaths}
+                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+              </p>
+            </div>
+            <div className="innerbox1">
+              <p>Total recovered:</p>
+              <p>
+                {country.recovered}
+                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+              </p>
+            </div>
 
-            </p>
           </div>
         ))}
 
