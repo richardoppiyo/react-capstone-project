@@ -45,13 +45,15 @@ const Home = () => {
            ) : (
              filtered.map((country) => (
                <div key="{country.id}" className="innerdiv">
-                 <img className="flag" src={`${country.flag}`} alt="hello" />
-                 <div className="detailer">
-                   <Link to={`/Details/${country.country}`}>
+                 <div className="insidediv">
+                   <Link to={`/Details/${country.country}`} style={{ color: '#fff' }}>
                      <BsArrowRightCircle />
                    </Link>
-                   <p>{country.country}</p>
-                   <p>
+                 </div>
+                 <img className="flag" src={`${country.flag}`} alt="hello" />
+                 <div className="detailer">
+                   <p className="contryname">{country.country}</p>
+                   <p className="contrycases">
                      Cases:
                      {' '}
                      {country.cases}

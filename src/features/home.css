@@ -1,20 +1,34 @@
+
+.uppediv {
+    padding: 20px;
+    background-color: #507ADA;
+    color: white;
+}
+
+.searchitems {
+    background-color: #10358A;
+    color: white;
+}
+
 .holder {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    background-color: #0938A5;
+    color: white;
 }
 
 .innerdiv {
     display: flex;
     flex-direction: column;
-    max-width: 150px;
-    background-color: aliceblue;
-    margin: 10px;
+    width: 50%;
+    height: 250px;
+    border-width:  1px;
+  box-sizing: border-box;
+  border-style: outset;
 }
 
 .flag {
-    width: 100%;
-    height: 100px;
+    margin: auto;
 }
 
 .detailer {
@@ -42,3 +56,21 @@
     display: flex;
     justify-content: space-around;
 } 
+
+.insidediv {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 25px;
+}
+
+.contryname {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.contrycases {
+    font-size: 12px;
+    margin-right: 25px;
+    margin-top: 0;
+}
