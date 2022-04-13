@@ -4,7 +4,6 @@ const handleSearch = (event) => {
   const countries = useSelector((state) => state.myred);
   const value = event.target.value.toLowerCase();
   let result = [];
-  console.log(value);
   result = countries.filter((data) => data.title.search(value) !== -1);
 
   return result;
