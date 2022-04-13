@@ -1,49 +1,49 @@
 .upperpart {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 170px;
-    padding: 20px;
-    background-color: #507ADA;
-    color: white;
-    
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 170px;
+  padding: 20px;
+  background-color: #507ada;
+  color: white;
 }
 
 .textstyle {
-    background-color: #10358A;
-    color: white;
-    height: 100%;
-    padding-left: 20px;
+  background-color: #10358a;
+  color: white;
+  height: 100%;
+  padding-left: 20px;
 }
 
 .box {
-background-color: #10358A;
- width: 100%;
- margin: auto;
- color: white;
- /* border: 2px solid; */
+  background-color: #10358a;
+  width: 100%;
+  margin: auto;
+  color: white;
+
+  /* border: 2px solid; */
 }
 
 .innerbox1 {
-    height: 40px;
-    padding: 3px 0 3px 10px;
-    display: flex;
-    justify-content: space-between;
+  height: 40px;
+  padding: 3px 0 3px 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .innerbox {
-    background-color: gray;
-    height: 40px;
-    padding: 3px 0 3px 10px;
-    display: flex;
-    justify-content: space-between;
+  background-color: gray;
+  height: 40px;
+  padding: 3px 0 3px 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .flag {
-    width: 140px;
-    height: 150px;
+  width: 140px;
+  height: 150px;
 }
 
 .arrow {
-    margin: 0 15px;
+  margin: 0 15px;
 }
