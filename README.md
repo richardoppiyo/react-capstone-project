@@ -14,6 +14,9 @@
 ## Live Link
 [Click Here](https://astounding-kitsune-d200f4.netlify.app/)
 
+## Loom video demo 
+[Click here](https://www.loom.com/share/34c819273ec14dd1804fd1a5ca49c624)
+
 ## Built With
 - Major Languages: JAVASCRIPT, HTML, CSS
 - Major Technologies : Git, Github, Webpack, React, Redux

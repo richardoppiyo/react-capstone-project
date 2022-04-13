@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { GiWorld } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
-// import { AiOutlineSearch } from 'react-icons/ai';
 import { displayCountries } from '../app/apis/covid';
 
 const Home = () => {
