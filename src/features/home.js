@@ -5,6 +5,7 @@ import { BsArrowRightCircle } from 'react-icons/bs';
 import { GiWorld } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
 import { displayCountries } from '../app/apis/covid';
+// import handleSearch from './filter';
 
 const Home = () => {
   const countries = useSelector((state) => state.myred);
