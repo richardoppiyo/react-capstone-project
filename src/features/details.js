@@ -34,47 +34,42 @@ const Details = () => {
                 </p>
               </div>
             </div>
-            <h3> Covid info breakdown</h3>
+            <div className="textstyle">
+              <h3> Covid info breakdown</h3>
+            </div>
             <div className="innerbox">
               <p>Continent:</p>
               <p>
                 {country.continent}
-                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+                <Link to="/"><BsArrowRightCircle className="arrow" style={{ color: '#fff' }} /></Link>
               </p>
             </div>
             <div className="innerbox1">
               <p>Total Cases:</p>
               <p>
-                {country.continent}
-                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+                {country.cases}
+                <Link to="/"><BsArrowRightCircle className="arrow" style={{ color: '#fff' }} /></Link>
               </p>
             </div>
             <div className="innerbox">
               <p>Total tested:</p>
               <p>
                 {country.tests}
-                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+                <Link to="/"><BsArrowRightCircle className="arrow" style={{ color: '#fff' }} /></Link>
               </p>
             </div>
             <div className="innerbox1">
-              <p>Population:</p>
-              <p>
-                {country.population}
-                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
-              </p>
-            </div>
-            <div className="innerbox">
               <p>Total deaths:</p>
               <p>
                 {country.deaths}
-                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+                <Link to="/"><BsArrowRightCircle className="arrow" style={{ color: '#fff' }} /></Link>
               </p>
             </div>
-            <div className="innerbox1">
+            <div className="innerbox">
               <p>Total recovered:</p>
               <p>
                 {country.recovered}
-                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
+                <Link to="/"><BsArrowRightCircle className="arrow" style={{ color: '#fff' }} /></Link>
               </p>
             </div>
 

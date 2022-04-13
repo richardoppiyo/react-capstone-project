@@ -9,7 +9,7 @@ import './header.css';
 const Header = ({ children }) => (
   <main>
     <header className="head">
-      <NavLink to="/" className="link-item">
+      <NavLink to="/" className="link-item" style={{ color: '#fff' }}>
         {' '}
         <IoIosArrowBack />
         {' '}
